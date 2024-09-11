@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* full screen styling */
+
+#fullScreen{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(142deg, rgba(209,198,243,1) 0%, rgba(233,188,172,1) 76%);
+}
+
+#playerFrame{
+    width: 32%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    border: 5px solid rgba(255, 192, 203, 0.406) ;
+}
+
+#songName{
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+#songName p{
+    font-size: 12px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+#songName h1{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+
+/* mid PART */
+
+#midPart{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 30%;
+    align-items: center;
+    
+}
+
+#play{
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/736x/92/d8/8a/92d88abbe8a2a015e472ff71380ef705.jpg);
+    background-size: contain;
+    border-radius: 50%;
+}
+#midPart button{
+    font-size: 20px;
+}
+.playButton{
+    background-color: white;
+    aspect-ratio: 1/1;
+    height: 35%;
+    border-radius: 50%;
+}
+
+
+#progressTrack{
+    position: absolute;
+    bottom:20%;
+    left: 23%;
+    border:none;
+    height:10px;
+    width: 54%;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, rgba(120,119,119,1) 0%, rgba(233,188,172,1) 76%);
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, -0px); }    
+}
