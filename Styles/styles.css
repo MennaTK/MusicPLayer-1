@@ -77,6 +77,8 @@
 }
 #midPart button{
     font-size: 20px;
+    border: none;
+    background-color: transparent;
 }
 .playButton{
     background-color: white;
@@ -138,4 +140,36 @@ audio::-webkit-media-controls-current-time-display {
 /* Hover Effect */
 #backward:hover, #forward:hover{
     color: rgb(255, 168, 183);
+}
+
+
+/* Resposiveness */
+@media only screen and (max-width: 600px) {
+
+    #playerFrame{
+        width: 60%;
+    }
+    audio::-webkit-media-controls-current-time-display {
+        left: 27%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    #playerFrame{
+        width: 60%;
+    }
+    audio::-webkit-media-controls-current-time-display {
+        left: 27%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #playerFrame{
+        width: 40%;
+    }
+    audio::-webkit-media-controls-current-time-display {
+        left: 27%;
+    }
+
 }
